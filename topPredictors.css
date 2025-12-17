@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:2px solid white */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+:root {
+    --log-in: #fe2c55;
+    --background-color: #131315;
+    --text-color: #fff;
+    --pigeon-color: #ffffff7b;
+    --eyes-color: #000;
+    --button-color: #1c1c1e;
+    --input-box: #313131;
+    --234-color: #b0b0b0;
+    --outline-color: #b2b2b2;
+    --reducedoutline-color: #b2b2b21a;
+    --futherreducedoutline-color: #b2b2b2f0;
+    --opacity: #ffffff6a;
+    --blur-effect: #00000021;
+    --nice-color:#2b8fce;
+
+
+}
+
+body {
+    min-height: 100vh;
+    background: var(--background-color);
+    padding:0 1rem;
+
+}
+h1{
+    color:var(--text-color);
+    margin-bottom: 1rem;
+    font-size: clamp(1.3rem,2vw,2.5rem);
+}
+.predictors-board{
+width:100%;
+background-color:var(--button-color);
+display: flex;
+flex-direction: column;
+gap:1rem;
+padding:1rem;
+
+/* margin: 0 auto; */
+border-radius: 20px;
+
+}
+
+.social-logo{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+.social-logo h3{
+    color:var(--234-color);
+
+}
+.winners-icon{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+
+}
+.winners-icon h2{
+    color: var(--text-color);
+}
+
+.topPredictor-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:0 1rem; */
+    gap:1rem;
+    
+}
+.predictor-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap:1rem;
+    
+}
+.specific-layout{
+    display: flex;
+    gap:2rem;
+}
+.numbering-container{
+    display: flex;
+    align-items: center;
+}
+
+.numbering{
+    color:var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.img-username{
+    display: flex;
+    gap:1rem;
+}
+.img-container{
+    Width:55px;
+    height: 55px;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+
+}
+.img-container img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.name-username{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    justify-content: center;
+}
+.name-username h4{
+    color:var(--text-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.name-username h4:last-child{
+    color:var(--234-color);
+    font-size: 0.8rem;
+}
+
+.num-wins span{
+color:#2b8fce;
+}
+
+
+

@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border:2px solid;  */
+}
+
+:root {
+    --log-in: #fe2c55;
+    --background-color: #131315;
+    --text-color: #fff;
+    --pigeon-color: #ffffff7b;
+    --eyes-color: #000;
+}
+
+body {
+    background-color: #131315;
+    color: #fff;
+    /* min-height: 100vh; */
+}
+
+header {
+    width: 100vw;
+    margin-top: 30px;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+    color: var(--pigeon-color)
+}
+
+.middle-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1.5rem;
+    padding:0 2rem;
+
+}
+
+.eyes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.left-eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 42% 50% 50% 42%;
+    position: relative;
+    background-color: var(--text-color);
+}
+
+.inner-eye {
+    width: 10px;
+    height: 10px;
+    background-color: var(--eyes-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 42% 42% 50%;
+    position: relative;
+    background-color: var(--text-color);
+}
+
+.two {
+    left: 2px;
+}
+
+.middle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.middle-text p {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 700;
+}
+
+#click {
+    height:50px;
+    width:100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 0;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 50px;
+    width: 100vw;
+}
+
+.bottom-text h2 {
+    text-align: center;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-weight: 100;
+}
+
+.bottom-text span a {
+    text-decoration: none;
+    color: var(--log-in);
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-weight: 400;
+}

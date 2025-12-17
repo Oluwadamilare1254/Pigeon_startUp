@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>One Time Password</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./OTP.css'>
+    <script defer src='./OTP.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>PIGEON</h1>
+    </header>
+    <form action="">
+    <article class="middle-content">
+        <div class="general">
+            <div class="little-spacing">
+                <h2>Enter Code</h2>
+                <div class="display-text">
+                    <p>We sent a verification code to your phone number,</p>
+                    <h3>+234 9165702885</h3>
+                </div>
+            </div>
+            <div class="code-text">
+                <div class="code-timer">
+                    <div class="code-box">
+                        <input type="tel" placeholder="-" id="input-container" minlength="1" maxlength="1" >
+                        <input type="tel" placeholder="-" id="input-container1" minlength="1" maxlength="1" >
+                        <input type="tel" placeholder="-"  id="input-container2" minlength="1" maxlength="1" >
+                        <input type="tel" placeholder="-" id="input-container3"  minlength="1" maxlength="1" >
+                    </div>
+
+                    <div class="timer">
+                        <span id="countdown">00:00</span>
+                    </div>
+                </div>
+                <div class="query">
+                    <p>Didn't recieve any code? <span><a href="">Resend Code</a></span></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="bottom-container">
+        <button>Continue</button>
+    </div>
+    </form>
+</body>
+
+</html>
