@@ -39,7 +39,7 @@ profileDetails.forEach(function(item){
             <div class="actions">
                 <div class="left">
                     <div id='text-logo'>
-                        <div>💬</div>
+                        <div><img src='Assets/comment.svg' alt='comment'/></div>
                         <span>900</span>
                     </div>
                     <div id=text-logo>

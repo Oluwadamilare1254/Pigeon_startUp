@@ -7,6 +7,11 @@
     <title>Create an account</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='create.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <script defer src="./create.js"></script>
 </head>
 
@@ -16,23 +21,26 @@
     </header>
 
     <div class="create-section">
-        <h2>Create an account</h2>
-        <form novalidate id="refresh">
-            <div class="username">
-                <input type="text" placeholder="username" id="username" required>
-                <p id="username-message" aria-live="polite">Only use letters, numbers, underscores and periods.</p>
-            </div>
-            <div class="password">
-                <div class="password-container">
-                    <input type="password" placeholder="password" id="password" minlength ='8'  maxlength="16" required>
-                    <button id="passwordBtn">Show</button>
-
+        <div class="middle">
+            <h2>Create an account</h2>
+            <form novalidate id="refresh">
+                <div class="username">
+                    <input type="text" name="username" placeholder="username" id="username" required>
+                    <p id="username-message" aria-live="polite">Only use letters, numbers, underscores and periods.</p>
                 </div>
-                <p id="password-message" aria-live="polite">Passwords must be 8 or more characters.</p>
-            </div>
-            <div class="botton-container">
+                <div class="password">
+                    <div class="password-container">
+                        <input type="password" placeholder="password" id="password" minlength='8' maxlength="16"
+                            required>
+                        <button id="passwordBtn">Show</button>
+
+                    </div>
+                    <p id="password-message" aria-live="polite">Passwords must be 8 or more characters.</p>
+                </div>
+        </div>
+        <div class="botton-container">
             <button type="submit" id="nextBtn">Next</button>
-            </div>
+        </div>
         </form>
     </div>
 </body>

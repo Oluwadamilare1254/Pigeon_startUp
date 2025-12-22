@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border:2px solid red;  */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
 
 }
 :root {
@@ -59,6 +59,7 @@ header {
 
 .logo h1 {
     color: var(--text-color);
+    font-size: clamp(1.3rem, 2vw, 2.3rem);
 }
 
 .logo .hamburger {
@@ -181,7 +182,7 @@ header {
 
 .community p {
     color: var(--opacity);
-    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     text-transform: uppercase;
 }
 
@@ -198,7 +199,7 @@ header {
 a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
 
 }
 
@@ -211,7 +212,7 @@ a {
 
 .tools p {
     color: var(--opacity);
-    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     text-transform: uppercase;
 }
 
@@ -238,7 +239,7 @@ a {
 
 .connect p {
     color: var(--opacity);
-    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     text-transform: uppercase;
 
 }
