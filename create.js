@@ -12,6 +12,8 @@ let passwordMessage = document.getElementById("password-message");
 let nextBtn = document.getElementById('nextBtn');
 const passwordBtn =document.getElementById('passwordBtn');
 
+
+
 const params = new URLSearchParams(window.location.search);
 const mode = params.get('mode');
 const dynamicText = document.getElementById('dynamicText');
@@ -78,7 +80,8 @@ else if (UserName.validity.typeMismatch){
 passwordBtn.addEventListener( 'click', function(e){
     e.preventDefault()
     passWord.type == 'text' ? passWord.type='password':passWord.type='text'
-    passwordBtn.src =='Assets/eye-closed-svgrepo-com.svg' ? passwordBtn.src='Assets/eye-closed-svgrepo-com.svg': passwordBtn.src='Assets/eyes-svgrepo-com.svg';
+  let password =   passwordBtn.src.includes('Assets/eyes-svgrepo-com.svg') ? passwordBtn.src='Assets/eye-closed-svgrepo-com.svg': passwordBtn.src='Assets/eyes-svgrepo-com.svg';
+  console.log(password)
    
 })
 
