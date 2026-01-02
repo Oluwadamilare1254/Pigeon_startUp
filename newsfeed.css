@@ -69,13 +69,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border:2px solid blue; */
     
 }
 .img-textcard a{
-    font-size: clamp(0.8rem,1vw,1.2rem);
+    font-size: clamp(0.65rem,1vw,1.2rem);
     text-decoration: none;
     color:var(--log-in);
-    transform: translateX(-25px);
+    /* transform: translateX(-25px); */
     
 }
 .img-textcard span{
@@ -86,7 +87,7 @@ h1{
 .general{
     position: relative;
     display: flex;
-    width:52px; 
+    /* width:52px;  */
 }
 .mini-img1{
     width:25px;

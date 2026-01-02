@@ -12,17 +12,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script defer src="./create.js"></script>
+    <script src="./create.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>PIGEON</h1>
+        <div class="pigeon-logo">
+        <img src="./Assets/PIGEON BIG.svg" alt="">
+        </div>
     </header>
 
     <div class="create-section">
         <div class="middle">
-            <h2>Create an account</h2>
+            <h2 id="dynamicText">Create an account</h2>
             <form novalidate id="refresh">
                 <div class="username">
                     <input type="text" name="username" placeholder="username" id="username" required>
@@ -32,7 +34,9 @@
                     <div class="password-container">
                         <input type="password" placeholder="password" id="password" minlength='8' maxlength="16"
                             required>
-                        <button id="passwordBtn">Show</button>
+                            <div class="hide-img">
+                        <img  src='./Assets/eye-closed-svgrepo-com.svg'id="passwordBtn" alt="hide">
+                        </div>
 
                     </div>
                     <p id="password-message" aria-live="polite">Passwords must be 8 or more characters.</p>

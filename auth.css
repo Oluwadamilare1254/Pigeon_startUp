@@ -21,15 +21,25 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     margin-top: 30px;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width:30%;
+    /* height:auto; */
+
+}
+.logo img{
+    width:100%;
+    height: auto;
+
 }
 
-header h1 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    text-align: center;
-    color: var(--pigeon-color)
-}
+
+
 
 .middle-content {
     width: 100vw;
@@ -111,7 +121,7 @@ header h1 {
     width: 100vw;
 }
 
-.bottom-text h2 {
+.bottom-text p {
     text-align: center;
     font-size: clamp(0.9rem, 1.2vw, 1.2rem);
     font-weight: 100;

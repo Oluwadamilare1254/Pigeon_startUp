@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Auth Page</title>
+    <title>Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./auth.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./index.css'>
+    <script defer src='./home.js'></script>
 </head>
+
 <body>
-    <header>
-        
-        <h1>PIGEON</h1>
-    </header>
-    <div class="middle-content">
+    <nav id="side-bar">
+        <div class="exit" onclick="closeSidebar()"><img src="./Assets/Chevron left.svg" alt=""></div>
         <div class="eyes">
             <div class="left-eye">
                 <div class="inner-eye"></div>
@@ -22,14 +24,116 @@
                 <div class="inner-eye two"></div>
             </div>
         </div>
-        <div class="middle-text">
-            <p>See what the world</p>
-            <p>currently believes in.</p>
+        <div class="community">
+            <p>community</p>
+            <div class="logo-text">
+                <div>❤️</div>
+                <a href="">Leaderboard</a>
+            </div>
         </div>
-        <button id="click" type="submit">Get Started</button>
-    </div>
-    <div class="bottom-text">
-        <h2>Already have an account? <span><a href="./login.html">Log in</a></span></h2>
+        <div class="tools">
+            <p>Tools</p>
+            <div class="logotext-1">
+                <div>❤️</div>
+                <a href="">Documentation</a>
+            </div>
+            <div class="logotext-1">
+                <div>❤️</div>
+                <a href="">Help & Support</a>
+            </div>
+            <div class="logotext-1">
+                <div>❤️</div>
+                <a href="">Terms of Use</a>
+            </div>
+        </div>
+        <div class="connect">
+            <p>Connect</p>
+            <div class="logotext-1">
+                <div><img src="./Assets/DISCORD.svg" alt=""></div>
+                <a href="">Discord community</a>
+            </div>
+            <div class="logotext-1">
+                <div>❤️</div>
+                <a href="">Instagram</a>
+            </div>
+            <div class="logotext-1">
+                <div>❤️</div>
+                <a href="">Twitter /x</a>
+            </div>
+        </div>
+        <div class="theme">
+            <div>❤️</div>
+            <a href="">Theme</a>
+        </div>
+    </nav>
+    <div id="pageContent">
+        <header>
+            <div class="whole-header">
+                <div class="logo">
+                    <div class="hamburger" id="hamburger"><img src="./Assets/hamburger icon 2.svg" alt=""></div>
+                    <div class="logo2">
+                        <img src="./Assets/PIGEON BIG.svg" alt="">
+                    </div>
+                </div>
+                <div class="log-sign">
+                    <button type="submit">Log in</button>
+                    <button type="submit">Sign up</button>
+                </div>
+            </div>
+
+        </header>
+        <div class="scrollable-titles">
+            <div class="home-icon">
+                <div class="blue"><img src="./Assets/HOME.svg" alt=""></div>
+                <h2>Home</h2>
+            </div>
+            <div class="home-icon">
+                <div class="blue">❤️</div>
+                <h2>Trending</h2>
+            </div>
+            <div class="home-icon">
+                <div class="blue"><img src="./Assets/SOCIALS.svg" alt=""></div>
+                <h2>Socials</h2>
+            </div>
+            <div class="home-icon">
+                <div class="blue"><img src="./Assets/News.svg" alt=""></div>
+                <h2>News</h2>
+            </div>
+        </div>
+
+        <section class="markets">
+            <div class="market-text">
+                <h3>Today's Biggest Market</h3>
+                <h4>Move with the Flock!</h3>
+            </div>
+            <div class="market-cards">
+                <div class="cards">
+                </div>
+                <div class="cards">
+                </div>
+                <div class="cards">
+                </div>
+                <div class="cards">
+                </div>
+            </div>
+        </section>
+        <section class="post-market"></section>
+
+        <section class="bottom-nav">
+            <div class="icon-text">
+                <div><img src="./Assets/arena.svg" alt=""></div>
+                <p>Arena</p>
+            </div>
+            <div class="icon-text">
+                <div><img src="./Assets/GLOBE.svg" alt=""></div>
+                <p>Markets</p>
+            </div>
+            <div class="icon-text">
+                <div><img src="./Assets/search.svg" alt=""></div>
+                <p>Search</p>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>

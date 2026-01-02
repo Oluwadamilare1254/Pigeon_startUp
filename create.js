@@ -11,6 +11,10 @@ let userMessage = document.querySelector("#username-message");
 let passwordMessage = document.getElementById("password-message");
 let nextBtn = document.getElementById('nextBtn');
 const passwordBtn =document.getElementById('passwordBtn');
+const params = new URLSearchParams(window.location.search);
+const mode = params.get('mode');
+const dynamicText = document.getElementById('dynamicText');
+console.log(passwordBtn)
 console.log(userMessage)
 // console.log(submit)
 UserName.addEventListener('input',(event)=>{
@@ -73,7 +77,8 @@ else if (UserName.validity.typeMismatch){
 passwordBtn.addEventListener( 'click', function(e){
     e.preventDefault()
     passWord.type == 'text' ? passWord.type='password':passWord.type='text'
-    passwordBtn.innerText == 'Hide' ? passwordBtn.innerText='Show':passwordBtn.innerText='Hide'
+    passwordBtn.src =='Assets/eye-closed-svgrepo-com.svg' ? passwordBtn.src='Assets/eye-closed-svgrepo-com.svg': passwordBtn.src='Assets/eyes-svgrepo-com.svg';
+   
 })
 
 
@@ -100,9 +105,16 @@ function passwordValidator(){
     }
 }
 
+ 
+ if(mode=='login'){
+    dynamicText.textContent = 'Welcome Back!'
+    console.log('yes')
 
-
-
+}
+else{
+    dynamicText.textContent = 'Create account'
+    console.log('no')
+}
 
 
 

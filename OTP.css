@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
 
 }
+html{
+    font-size:16px;
+}
 
 :root {
     --log-in: #fe2c55;
@@ -70,7 +73,7 @@ header h1 {
 }
 
 .little-spacing p {
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     color: var(--234-color);
 }
 
@@ -116,12 +119,13 @@ header h1 {
     font-size: clamp(1.3rem, 1.5vw, 1.5rem);
 }
 .query p{
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
     color: var(--234-color);
 }
 .query p>span>a{
     text-decoration: none;
-    color:var(--log-in)
+    color:var(--log-in);
+    /* font-size: clamp(1.1rem, 1.3vw, 1.5rem); */
 }
 .bottom-container{
     text-align: center;
