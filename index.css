@@ -103,12 +103,17 @@ header {
 .log-sign button {
     padding: 0.8rem 1rem;
     border-radius: 8px;
-    font-size: 08.rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.log-sign>button>a{
+    font-size: 0.8rem;
+    color: var(--log-in);
 }
 
 .log-sign button:first-child {
     background-color: var(--background-color);
-    color: var(--log-in);
     border: 1px solid var(--log-in)
 }
 

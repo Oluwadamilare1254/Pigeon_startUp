@@ -65,7 +65,7 @@ header {
 }
 
 .middle h2 {
-    font-size: clamp(1.3rem, 1.8vw, 2.3rem);
+    font-size: clamp(1.5rem, 1.8vw, 2.3rem);
     text-align: center;
     color: var(--text-color);
 }

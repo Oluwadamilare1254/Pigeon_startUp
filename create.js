@@ -11,6 +11,7 @@ let userMessage = document.querySelector("#username-message");
 let passwordMessage = document.getElementById("password-message");
 let nextBtn = document.getElementById('nextBtn');
 const passwordBtn =document.getElementById('passwordBtn');
+
 const params = new URLSearchParams(window.location.search);
 const mode = params.get('mode');
 const dynamicText = document.getElementById('dynamicText');
