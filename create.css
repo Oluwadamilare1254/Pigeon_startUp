@@ -97,7 +97,7 @@ header {
 }
 
 .username p {
-    font-size: clamp(0.6rem, 0.9vw, 1rem);
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
 }
 
 p {
@@ -152,8 +152,8 @@ p {
 }
 
 .password p {
-    color: var(--234-color);
-    font-size: clamp(0.6rem, 0.9vw, 1rem);
+    /* color: var(--234-color); */
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
 }
 
 .botton-container #nextBtn {
@@ -180,12 +180,18 @@ p {
 
 }
 
-.yellow {
-    color: orange;
+button:disabled {
+  background-color: #ccc;   /* Gray out the button */
+  color: #666;              /* Darker text color */
+  cursor: not-allowed;      /* Show the “disabled” cursor */
+  opacity: 0.6;             /* Optional: make it look faded */
+}
+.red{
+    color: red;
 }
 
 .green {
-    font-size: 3.5rem;
+    font-size: 0.8rem;
     color: green;
 }
 
